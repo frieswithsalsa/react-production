@@ -1,9 +1,12 @@
+import { StringMap } from "i18next";
+
 export type BuildMode = 'production' | 'development'
 
 export interface BuildPaths {
     entry: string;
     build: string;
     html: string;
+    src: string;
 }
 
 export interface BuildEnv {
@@ -16,4 +19,5 @@ export interface BuildOptions {
    paths: BuildPaths;
    isDev: boolean;
    port: number;
+
 }
