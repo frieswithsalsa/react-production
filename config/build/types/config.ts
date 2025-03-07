@@ -1,4 +1,4 @@
-import { StringMap } from "i18next";
+import { StringMap } from 'i18next';
 
 export type BuildMode = 'production' | 'development'
 
