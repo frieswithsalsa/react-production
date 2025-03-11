@@ -30,3 +30,4 @@ if(isDev) {
     
 }
     return plugins
+}
