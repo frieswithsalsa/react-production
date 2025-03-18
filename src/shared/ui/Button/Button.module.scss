@@ -16,7 +16,7 @@
     border: none;
     background: none;
     outline: none;
-    color: var(--inverted-primary-color); 
+    color: var(--inverted-primary-color);
 }
 
 .outline {
@@ -24,7 +24,7 @@
     color: var(--primary-color);
     background: none;
 }
- 
+
 
 .background {
     background: var(--bg-color);
@@ -50,7 +50,6 @@
 .square.size_l {
     width: var(--font-line-l);
     height: var(--font-line-l);
-
 }
 
 .square.size_xl {

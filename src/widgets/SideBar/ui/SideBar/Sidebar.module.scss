@@ -18,7 +18,6 @@
     margin-left: 20px;
 }
 
-
 .collapseBtn {
     position: absolute;
     right: -32px;
@@ -36,7 +35,6 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
-
 }
 
 .link {
@@ -45,9 +43,8 @@
 }
 
 .icon {
-    fill: var(--inverted-primary-color)
+    fill: var(--inverted-primary-color);
 }
-
 
 .collapsed {
     width: var(--sidebar-width-collapsed);
@@ -67,4 +64,3 @@
         width: 0;
     }
 }
-
