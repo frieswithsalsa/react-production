@@ -1,17 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit'
-import { UserSchema } from 'entities/Users/model/types/user'
+import { createSlice } from '@reduxjs/toolkit';
+import { UserSchema } from 'entities/Users/model/types/user';
 
 const initialState: UserSchema = {
-    
-}
+
+};
 
 export const userSlice = createSlice({
-  name: 'user',
-  initialState: initialState,
-  reducers: {
-   
-  },
-})
+    name: 'user',
+    initialState,
+    reducers: {
 
-export const { actions: userActions} = userSlice
-export const { reducer: userReducer} = userSlice
+    },
+});
+
+export const { actions: userActions } = userSlice;
+export const { reducer: userReducer } = userSlice;

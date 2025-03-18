@@ -4,11 +4,11 @@ import { Input } from 'shared/ui/input/input';
 
 const MainPage = () => {
     const { t } = useTranslation('main');
-    const [value, setValue] = useState('')
+    const [value, setValue] = useState('');
 
     const onChange = (val:string) => {
-        setValue(val)
-    }
+        setValue(val);
+    };
 
     return (
         <div>
