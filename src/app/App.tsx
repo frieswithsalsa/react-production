@@ -1,13 +1,19 @@
-import { useTheme } from 'app/providers/ThemeProvider';
+import React, { Suspense, useEffect } from 'react';
 import { classNames } from 'shared/lib/classNames/classNames';
-import { Navbar } from 'widgets/NavBar';
-import { Sidebar } from 'widgets/SideBar/ui';
-import { Suspense, useEffect, useState } from 'react';
-import { Modal } from 'shared/ui/Modal/Modal';
-import { AppRouter } from './providers/router';
+import { useTheme } from 'app/providers/ThemeProvider';
+import { AppRouter } from 'app/providers/router';
+import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar';
+import { useDispatch } from 'react-redux';
+import { userActions } from 'entities/User';
 
-const App = () => {
-    const { theme, toggleTheme } = useTheme();
+function App() {
+    const { theme } = useTheme();
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(userActions.initAuthData());
+    }, [dispatch]);
 
     return (
         <div className={classNames('app', {}, [theme])}>
@@ -20,6 +26,6 @@ const App = () => {
             </Suspense>
         </div>
     );
-};
+}
 
 export default App;
