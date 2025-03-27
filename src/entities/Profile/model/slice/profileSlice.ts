@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 import { ProfileSchema } from '../types/profile';
 
 const initialState: ProfileSchema = {
@@ -11,8 +11,7 @@ const initialState: ProfileSchema = {
 export const profileSlice = createSlice({
     name: 'profile',
     initialState,
-    reducers: {
-    },
+    reducers: {},
 });
 
 // Action creators are generated for each case reducer function
